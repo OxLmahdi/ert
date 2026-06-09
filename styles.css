@@ -1,0 +1,68 @@
+/* ULTIMATE INVISIBLE GHOST MODE */
+#docusearch-floating {
+position: fixed !important;
+top: 20px !important;
+right: 20px !important;
+width: 280px !important;
+background: transparent !important; /* কোনো ব্যাকগ্রাউন্ড থাকবে না */
+border: none !important;
+box-shadow: none !important;
+z-index: 2147483647 !important;
+font-family: Arial, sans-serif !important;
+pointer-events: auto !important;
+user-select: none !important;
+}
+
+#docusearch-floating * {
+background: transparent !important; /* ভেতরের সব কিছুর ব্যাকগ্রাউন্ড গায়েব */
+}
+
+#docusearch-floating .ds-header {
+padding: 0 !important;
+border: none !important;
+display: flex !important;
+margin-bottom: 5px !important;
+}
+
+#docusearch-floating #ds-search {
+width: 100% !important;
+border: none !important;
+color: rgba(100, 100, 100, 0.1) !important;
+padding: 5px !important;
+font-size: 11px !important;
+outline: none !important;
+}
+
+#docusearch-floating #ds-search:focus {
+color: rgba(100, 100, 100, 0.6) !important;
+}
+
+#docusearch-floating #ds-results {
+max-height: 350px !important;
+overflow-y: auto !important;
+padding: 0 !important;
+scrollbar-width: none !important;
+}
+#docusearch-floating #ds-results::-webkit-scrollbar {
+display: none !important;
+}
+
+#docusearch-floating .ds-result {
+padding: 6px 4px !important;
+border: none !important;
+margin: 0 !important;
+cursor: default !important;
+}
+
+/* ডিফল্ট অবস্থায় লেখা ১০০% অদৃশ্য */
+#docusearch-floating .ds-q,
+#docusearch-floating .ds-a {
+color: transparent !important;
+font-size: 11px !important;
+line-height: 1.4 !important;
+transition: color 0.1s ease !important;
+}
+
+/* শুধু মাউস রাখলে লেখা ভেসে উঠবে */
+#docusearch-floating .ds-result:hover .ds-q { color: rgba(120, 120, 120, 0.85) !important; }
+#docusearch-floating .ds-result:hover .ds-a { color: rgba(80, 80, 80, 0.95) !important; font-weight: bold !important; }
